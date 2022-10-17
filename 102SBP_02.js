@@ -23,10 +23,10 @@ contactos.push({nombre : "Maisie Haley", teléfono : "0913 531 3030", correo : "
 //for(let a of contactos){
 //alert("nombre: "+a.nombre+", teléfono: " + a.teléfono+", correo: " + a.correo+".");
 //}
+document.write("<h1 style=\"color:white;\">Mostrar el primer contacto y el último:</h1>")
 for(i = 0 ;i<contactos.length;i++){
     if(i==0||i==contactos.length-1){
-        document.write("<p>");
-        alert(contactos[i].nombre+" / " + contactos[i].teléfono+" / "+ contactos[i].correo);
+        document.write("<p style=\"color:white;\">");
         console.log(contactos[i].nombre+" / " + contactos[i].teléfono+" / "+ contactos[i].correo);
         for(let a in contactos[i]){
             if(contactos[i][a]!=contactos[i].correo){
