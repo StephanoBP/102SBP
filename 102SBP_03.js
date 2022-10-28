@@ -11,11 +11,11 @@ nombres = String(prompt("Dame tu nombre"));
 teléfonos = String(prompt("Dame tu teléfono"));
 correos = String(prompt("Dame tu correo"));
 contactos.push({nombre : nombres, teléfono : teléfonos, correo : correos});
-document.write("<h1 style=\"color:white;\">Mostrar el primer contacto y el último:</h1>");
+document.write("<h1>Mostrar el primer contacto y el último:</h1>");
 console.log("Mostrar el primer contacto y el último:");
 for(i=0;i<contactos.length;i++){
     if(i==0||i==contactos.length-1){
-        document.write("<p style=\"color:white;\">");
+        document.write("<p>");
         console.log(contactos[i].nombre+" / " + contactos[i].teléfono+" / "+ contactos[i].correo);
         for(let a in contactos[i]){
             if(contactos[i][a]!=contactos[i].correo){
