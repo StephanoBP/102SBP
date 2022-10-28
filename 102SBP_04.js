@@ -14,7 +14,7 @@ do{
     }
 }while(booleanos);
 if(opcion==1){
-    document.write("<h1 style=\"color:white;\">Mostrar el primer contacto.</h1><p style=\"color:white;\">")
+    document.write("<h1>Mostrar el primer contacto.</h1><p>")
     for(let a in contactos[0]){
         if(contactos[0][a]!=contactos[0].correo){
             document.write(contactos[0][a]+" / ");
@@ -26,7 +26,7 @@ if(opcion==1){
     document.write("</p>");
 }else if(opcion==2){
         console.log(contactos[contactos.length-1]);
-        document.write("<h1 style=\"color:white;\">Mostrar el último contacto.</h1><p style=\"color:white;\">")
+        document.write("<h1>Mostrar el último contacto.</h1><p>")
         for(let a in contactos[contactos.length-1]){
             if(contactos[contactos.length-1][a]!=contactos[contactos.length-1].correo){
                 document.write(contactos[contactos.length-1][a]+" / ");
@@ -42,6 +42,6 @@ if(opcion==1){
     let correos=prompt("Dime un correo");
     if(nombres!="" && teléfonos!="" && correos!=""){
         contactos.push({nombre : nombres, teléfono : teléfonos, correo : correos});
-        document.write("<h1 style=\"color:white;\">Añadir nuevo contacto.</h1><p style=\"color:white;\">Has introducido los siguientes datos:<br>nombre: "+ nombres + "<br>teléfono: " + teléfonos + "<br>correo: " + correos+"</p>");
+        document.write("<h1>Añadir nuevo contacto.</h1><p>Has introducido los siguientes datos:<br>nombre: "+ nombres + "<br>teléfono: " + teléfonos + "<br>correo: " + correos+"</p>");
     }
 }
